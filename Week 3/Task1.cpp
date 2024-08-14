@@ -2,11 +2,10 @@
 
 #include <iostream>
 
-using namespace std;
 int main()
 {
 	unsigned int n, k;
-	cin >> n >> k;
+	std::cin >> n >> k;
 
 	unsigned max = n > k ? n : k;
 	unsigned lcmCandidate = max;
@@ -15,7 +14,7 @@ int main()
 		lcmCandidate += max;
 	}
 
-	cout << lcmCandidate << endl;
+	std::cout << lcmCandidate << endl;
 
     return 0;
 }
